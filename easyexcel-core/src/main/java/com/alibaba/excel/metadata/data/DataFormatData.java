@@ -5,6 +5,7 @@ import com.alibaba.excel.util.StringUtils;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 
 /**
  * data format
@@ -24,6 +25,11 @@ public class DataFormatData {
      * format
      */
     private String format;
+
+    /**
+     * cell style
+     */
+    private XSSFCellStyle xssfCellStyle;
 
     /**
      * The source is not empty merge the data to the target.

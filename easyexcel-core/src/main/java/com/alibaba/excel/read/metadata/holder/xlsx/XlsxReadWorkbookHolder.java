@@ -77,6 +77,7 @@ public class XlsxReadWorkbookHolder extends ReadWorkbookHolder {
             dataFormatData.setIndex(xssfCellStyle.getDataFormat());
             dataFormatData.setFormat(BuiltinFormats.getBuiltinFormat(dataFormatData.getIndex(),
                 xssfCellStyle.getDataFormatString(), globalConfiguration().getLocale()));
+            dataFormatData.setXssfCellStyle(xssfCellStyle);
             return dataFormatData;
         });
     }
